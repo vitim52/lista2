@@ -1,0 +1,163 @@
+ATIVIDADE 2
+
+1)
+s=float(input("Informe o salário: "))
+f=float(input("Informe o valor do financiamento pretendido: "))
+if f<=5*s:
+    print("Financiamento concedido")
+else:
+    print("Financiamento negado")
+print("Obrigado por nos consultar")
+
+
+
+2)
+d1=float(input("Informe a distância percorrida do primeiro carro: "))
+t1=float(input("Informe o tempo gasto do primeiro carro: "))
+d2=float(input("Informe a distância percorrida do segundo carro: "))
+t2=float(input("Informe o tempo gasto do segundo carro: "))
+vm1=d1/t1
+vm2=d2/t2
+if vm1>vm2:
+    print("A velocidade média do carro 1 é a maior")
+elif vm2>vm1:
+    print("A velocidade média do carro 2 é a maior")
+else: 
+    print("A velocidade média dos dois carros são iguais")
+
+
+
+3)
+nome1=input("Informe o seu nome: ")
+nome2=input("Informe o seu nome: ")
+idade1=int(input("Informe a sua idade: "))
+idade2=int(input("Informe a sua idade: "))
+ano=int(input("Informe o ano atual: "))
+if idade2<idade1:
+    calc=ano-idade2
+    print(nome2, "é mais novo e nasceu em ",calc)
+else:
+    calc=ano-idade1
+    print(nome1, "é mais novo e nasceu em ",calc)
+
+
+
+4)
+num1=float(input("Informe um número: "))
+num2=float(input("Informe um número: "))
+num3=float(input("Informe um número: "))
+
+if num1>num2 and num1>num3:
+    print("O número 1 é o maior.")
+elif num2>num1 and num2>num3:
+    print("O número 2 é o maior.")
+else:
+    print ("O número 3 é o maior.")
+
+
+
+5)
+nome=input("Informe o seu nome: ")
+n1=float(input("Informe a primeira nota: "))
+n2=float(input("Informe a segunda nota: "))
+
+media=(n1+n2)/2
+
+if media>=0 and media<5:
+    print("REPROVADO")
+elif media>=5 and media<7:
+    print("RECUPERAÇÃO")
+elif media>=7 and media<=10:
+    print ("APROVADO")
+
+
+
+6)
+media=int(input("Informe a sua média: "))
+faltas=int(input("Informe a quantidade de faltas: "))
+
+if media>=7 and faltas<=32:
+    print ("APROVADO")
+elif media<=7 and faltas<=32:
+    print ("Reprovado por média")
+elif media>=7 and faltas>=32:
+    print ("Reprovado por faltas")
+else:
+    print ("Reprovado por faltas e por média")
+
+
+7)
+A1=float(input("Informe um ângulo: "))
+A2=float(input("Informe um ângulo: "))
+A3=float(input("Informe um ângulo: "))
+
+if A1+A2+A3>180:
+    print ("Os ângulos informados não formam um triângulo")
+elif A1<90 and A2<90 and A3<90:
+    print ("O triângulo é um acutângulo")
+elif A1==90 or A2==90 or A3==90:
+    print ("O triângulo é retângulo")
+elif A1>90 or A2>90 or A3>90:
+    print ("O triângulo é obtusângulo")
+
+8)
+
+km=float(input("Informe a distância em km: "))
+l=float(input("Informe a quantidade de litros: "))
+
+consumo=km/l
+
+if consumo<8:
+    print("Venda o carro!")
+elif consumo>=8 and consumo<=14:
+    print("Econômico!")
+elif consumo>12:
+    print("Super Econômico!")
+
+
+ 9)
+
+sexo=input("Informe o sexo: M-Masculino F-Feminino")
+peso=float(input("Informe o peso: "))
+altura=float(input("Informe a altura: "))
+idade=int(input("Informe a idade: "))
+
+
+if sexo=="M":
+    homem=66+(13.7*peso)+5.0*altura-6.8*idade
+    print("calorias diárias:", homem)
+else: 
+    mulher=665+(9.6*peso)+1.8*altura-4.7*idade
+    print("calorias diárias:", mulher)
+10)
+
+
+bruto=float(input("Informe o salário bruto: "))
+
+if bruto<=1903.98:
+    print("Isento")
+elif bruto>=1903.99 and bruto<=2826.65:
+    imposto=bruto*0.075-142,80
+elif bruto>=2826.66 and bruto<=3751.05:
+    imposto=bruto*0.15-548.82
+elif bruto>=3751.06 and bruto<= 4664.68:
+    imposto=bruto*0.225-636.13
+else: 
+    imposto=bruto*0.275-869.36
+print(imposto)
+
+
+11)
+
+mes=int(input("Informe o mês: "))
+ano=int(input("Informe o ano: "))
+
+if mes==1 and mes==3 and mes==5 and mes==7 and mes==8 and mes==10 and mes=12:
+    print("Esse mês tem 31 dias")
+elif and mes==4 and mes==6 and mes==9 and mes==11:
+    print("Esse mês tem 30 dias")
+
+if mes==2:
+    print
+
+12)
